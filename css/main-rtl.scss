@@ -1,0 +1,18 @@
+@import "sass/helpers/variables";
+@import "sass/helpers/mixins";
+.header {
+  .navbar {
+    @include maxMobile {
+      right: auto;
+      left: 25px; // in rtl right: auto; left:25px;
+      &::before {
+        right: auto;
+        left: 5px; // in rtl right: auto; left:5px;
+      }
+      a:hover {
+        padding-left: 15px;
+        padding-right: 25px;
+      }
+    }
+  }
+}

@@ -1,0 +1,135 @@
+/* Start Slider */
+.slider {
+  blockquote {
+    font: {
+      size: 20px;
+      style: italic;
+      family: Tahoma, Arial;
+    }
+    line-height: 1.7;
+    text-align: center;
+    color: #5e5e5e;
+    width: 80%;
+    margin: 30px auto;
+  }
+  img {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto 30px;
+  }
+  .bullets {
+    text-align: center;
+    li {
+      cursor: pointer;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #d1d1d1;
+      border: 2px solid #d1d1d1;
+      &.active,
+      &:hover {
+        background-color: #fff;
+        border: 2px solid #333;
+      }
+    }
+  }
+}
+/* End Slider */
+/* Start Our Services */
+.services {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .service-box {
+    width: 100%;
+    @include minMedium {
+      width: (100% / 3);
+    }
+    padding: 20px;
+    .box-title {
+      color: #666;
+    }
+    .box-des {
+      color: #777;
+      line-height: 1.5;
+    }
+    .box-link {
+      color: $mainColor;
+    }
+  }
+}
+/* End Our Services */
+/* Start Our Playing */
+.playing {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .player-box {
+    width: 100%;
+    @include maxMobile {
+      text-align: center;
+    }
+    @include minSmall {
+      width: (100% / 2);
+    }
+    @include minMedium {
+      width: (100% / 3);
+    }
+    @include minLarg {
+      width: (100% / 5);
+    }
+    padding: 20px;
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+    .box-title {
+      color: #666;
+      font-weight: normal;
+      span {
+        font-weight: bold;
+      }
+    }
+    .box-des {
+      color: #777;
+      line-height: 1.5;
+    }
+    .box-link {
+      color: $mainColor;
+    }
+  }
+}
+/* End Our Playing */
+
+/* Start Our Lorem */
+.lorem {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .lorem-box {
+    width: 100%;
+    @include maxMobile {
+      text-align: center;
+    }
+    @include minSmall {
+      width: (94% / 2);
+    }
+    @include minMedium {
+      width: (94% / 3);
+    }
+    padding: 20px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+/* End Our Lorem */

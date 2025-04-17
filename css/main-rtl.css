@@ -1,0 +1,14 @@
+@media (max-width: 767px) {
+  .header .navbar {
+    right: auto;
+    left: 25px;
+  }
+  .header .navbar::before {
+    right: auto;
+    left: 5px;
+  }
+  .header .navbar a:hover {
+    padding-left: 15px;
+    padding-right: 25px;
+  }
+}/*# sourceMappingURL=main-rtl.css.map */

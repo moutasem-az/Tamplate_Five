@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  @include minSmall {
+    width: 750px;
+  }
+  @include minMedium {
+    width: 970px;
+  }
+  @include minLarg {
+    width: 1170px;
+  }
+}

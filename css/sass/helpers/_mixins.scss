@@ -1,0 +1,50 @@
+// Start Responsive
+@mixin maxMobile {
+  @media (max-width: $maxMobile) {
+    @content;
+  }
+}
+@mixin minSmall {
+  @media (min-width: $minSmall) {
+    @content;
+  }
+}
+@mixin minMedium {
+  @media (min-width: $minMedium) {
+    @content;
+  }
+}
+@mixin minLarg {
+  @media (min-width: $minLarg) {
+    @content;
+  }
+}
+// End Responsive
+
+// Start overlay mixin
+@mixin overlay($color, $opacity) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color, $opacity);
+}
+// End overlay mixin
+
+// Start Prefixes Mixin
+@mixin prefixer($property, $value, $prefixes: ()) {
+  @each $Prefix in $prefixes {
+    #{'-' + $Prefix + '-' + $property}: $value;
+  }
+  #{$property}: $value;
+}
+// End Prefixes Mixin
+
+// Start Animation Mixin
+@mixin keyFrame($animationName) {
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+//  End Animation Mixin
